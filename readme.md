@@ -13,9 +13,9 @@ The software depends on autograd (https://github.com/HIPS/autograd)
 python train_hsbnn.py
 ```
 
-* You can use
+* Under src folder, use
 
 ```
-python ./src/plot_weights.py path/to/results.pkl
+python plot_weights.py ./results/Classification/02_14_2022/hsbnn_20_1.pkl
 ```
 to visualize the inferred weights.
