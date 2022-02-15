@@ -1,9 +1,11 @@
+import sys
+sys.path.insert(0, '../src')
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sb
 import argparse
-from sklearn.externals import joblib
-from src.hs_bnn import HSBnn
+import joblib
+from hs_bnn import HSBnn
 
 sb.set_context("paper", rc={"lines.linewidth": 5, "lines.markersize":10, 'axes.labelsize': 8,
    'text.fontsize': 8,
