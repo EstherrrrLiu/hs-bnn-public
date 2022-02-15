@@ -52,7 +52,7 @@ def plot_singlelayer_weights(mlp, posterior_mode=False):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument("r_path",required=False)
+    parser.add_argument("r_path")
     args = parser.parse_args()
     r_path =args.r_path
     model = joblib.load(r_path)
