@@ -3,11 +3,13 @@
 	q = N(w_ijl | m_ijl, sigma^2_ijl) N(ln \tau_kl | params) IGamma(\lambda_kl| params)
 	IGamma(\tau_l | params) IGamma(\lambda_l| params)
 """
+import sys
+sys.path.insert(0, '../src')
 import autograd.numpy as np
 import autograd.numpy.random as npr
-from autograd.scipy.misc import logsumexp
+from autograd.scipy.special import logsumexp
 from autograd.scipy.special import gammaln, psi
-from src.utility_functions import diag_gaussian_entropy, inv_gamma_entropy, log_normal_entropy
+from utility_functions import diag_gaussian_entropy, inv_gamma_entropy, log_normal_entropy
 
 
 class FactorizedHierarchicalInvGamma:
