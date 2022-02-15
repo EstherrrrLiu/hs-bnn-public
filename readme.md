@@ -7,10 +7,10 @@ The software depends on autograd (https://github.com/HIPS/autograd)
 
 ### USAGE:
 
-*  To train,
+*  To train, in scripts folder
 
 ```
-python ./scripts/train_hsbnn.py
+python train_hsbnn.py
 
 ```
 
