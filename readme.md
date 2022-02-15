@@ -11,7 +11,6 @@ The software depends on autograd (https://github.com/HIPS/autograd)
 
 ```
 python train_hsbnn.py
-
 ```
 
 * You can use
