@@ -42,9 +42,9 @@ mlp = HSBnn(layer_sizes, train_stats, x_train, y_train, x_test, y_test, inferenc
 mlp = fit(mlp, n_epochs=num_epochs, l_rate=learning_rate)
 save_date = time.strftime("%m_%d_%Y")
 if classification:
-    save_path = "./results/Classification/{0}".format(save_date)
+    save_path = "../src/results/Classification/{0}".format(save_date)
 else:
-    save_path = "./results/Regression/{0}".format(save_date)
+    save_path = "../src/results/Regression/{0}".format(save_date)
 os.makedirs(save_path, exist_ok=True)
 save_name = "{0}/hsbnn_{1}_{2}.pkl".format(save_path, num_nodes, lambda_b_global)
 joblib.dump(mlp, save_name)
