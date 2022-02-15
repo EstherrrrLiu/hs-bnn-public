@@ -9,7 +9,7 @@ def classification_data(seed=0):
     :return:
     """
     npr.seed(seed)
-    data = np.load("./data/2D_toy_data_linear.npz")
+    data = np.load("../data/2D_toy_data_linear.npz")
     x = data['x']
     y = data['y']
     ids = np.arange(x.shape[0])
