@@ -1,7 +1,7 @@
 import time, os
 import numpy as np
 import joblib
-from src.load_data import classification_data, regression_data
+from .src.load_data import classification_data, regression_data
 from src.factorized_approximation import FactorizedHierarchicalInvGamma as inference_engine
 from src.hs_bnn import HSBnn, fit
 
