@@ -1,9 +1,11 @@
 from copy import copy
 
+import sys
+sys.path.insert(0, '../src')
 import autograd.numpy as np
 from autograd import grad
-from src.optimizers import adam
-from src.utility_functions import make_batches
+from optimizers import adam
+from utility_functions import make_batches
 
 
 class HSBnn:
